@@ -3,7 +3,6 @@ kind: Service
 metadata:
   name: everything-allowed-service
 spec:
-  allocateLoadBalancerNodePorts: true
   ports:
   - port: 80
     targetPort: 80
