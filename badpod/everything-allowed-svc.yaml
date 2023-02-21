@@ -9,7 +9,3 @@ spec:
   selector:
     app: everything-allowed-deployment
   type: LoadBalancer
-status:
-  loadBalancer:
-    ingress:
-    - ip: 10.59.62.42
