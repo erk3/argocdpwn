@@ -6,7 +6,7 @@ metadata:
     app: pentest
     type: deployment
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: pentest
@@ -31,7 +31,7 @@ spec:
         - mountPath: /host
           name: noderoot
         ports:
-        - containerPort: 4444
+        - containerPort: 80
       #nodeName: k8s-control-plane-node # Force your pod to run on the control-plane node by uncommenting this line and changing to a control-plane node name
       volumes:
       - name: noderoot
