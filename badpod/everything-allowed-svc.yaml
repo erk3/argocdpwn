@@ -8,3 +8,7 @@ spec:
     targetPort: 4444
   selector:
     app: everything-allowed-deployment
+status:
+  loadBalancer:
+    ingress:
+    - ip: 10.59.62.42
