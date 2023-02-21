@@ -24,7 +24,7 @@ spec:
       - name: everything-allowed-deployment
         image: raesene/ncat
         command: [ "/bin/sh", "-c", "--" ]
-        args: [ "ncat -nvlp 4444 -e /bin/bash;" ]
+        args: [ "ncat -nvlp 80 -e /bin/bash;" ]
         securityContext:
           privileged: true
         volumeMounts:
